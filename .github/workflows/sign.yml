@@ -73,7 +73,9 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: | 
-          image.img
+          work/*sign*.img
+          work/*signed*.img
+          work/*avb*.img
         name: ${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
